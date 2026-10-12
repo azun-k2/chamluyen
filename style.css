@@ -28,8 +28,8 @@ body {
 main { max-width: 720px; margin: 0 auto; }
 .hero { text-align: center; margin-bottom: 40px; }
 .icon {
-  width: 112px; height: 112px; margin: 0 auto 14px; display: block;
-  filter: drop-shadow(0 10px 22px rgba(34, 184, 101, 0.28));
+  width: 126px; height: 126px; margin: 0 auto 14px; display: block;
+  clip-path: circle(44.5%);  /* the icon's disc only: its pale square ground shows on the page */
 }
 h1 { font-size: 34px; margin: 0 0 6px; letter-spacing: -0.4px; }
 .tagline { color: var(--muted); margin: 0; font-size: 18px; }
