@@ -51,6 +51,7 @@
   <p><strong>Kiểm tra trước khi dùng.</strong> Mỗi giọng tải về đều được đối chiếu với một dấu vân tay có sẵn trong ứng dụng, và bị bỏ đi nếu không khớp.</p>
   <p><strong>Tài khoản, chỉ khi bạn đăng nhập.</strong> Trong ứng dụng không có phần đăng ký: chúng tôi tạo tài khoản cho người lớn khi được yêu cầu. Máy chủ của chúng tôi (Cloudflare Workers và cơ sở dữ liệu Cloudflare D1) khi đó lưu số điện thoại, tên phụ huynh nếu có, bản băm có muối của mật khẩu (không bao giờ lưu mật khẩu), các bản ghi gói (gói, ngày bắt đầu và ngày hết hạn), các thiết bị đang đăng nhập (tên thiết bị như "iPhone" và lần dùng gần nhất) và ngày đăng nhập gần nhất. Thông tin chỉ dùng để đăng nhập, để biết gói có còn hiệu lực hôm nay không, và để hỗ trợ khi bạn liên hệ. Chúng tôi không bán, không chia sẻ cho quảng cáo, và không dùng để phân tích hay theo dõi.</p>
   <p><strong>Bảng xếp hạng cả nước, chỉ với tài khoản có gói.</strong> Ứng dụng gửi điểm cao nhất của bé ở từng trò chơi cùng tên đã nhập trong ứng dụng. Các bạn khác thấy tên đó, điểm và bốn số cuối của số điện thoại của tài khoản, để phân biệt hai bạn trùng tên. Tên được kiểm tra trên máy chủ của chúng tôi, và tên không phù hợp sẽ hiện là "Bạn nhỏ". Không có thông tin nào khác về quá trình học của bé được gửi đi.</p>
+  <p><strong>Hình bạn đồng hành trên bảng xếp hạng.</strong> Mặc định bảng chỉ hiện một bạn đồng hành có sẵn trong ứng dụng, không chứa thông tin cá nhân. Nếu người lớn chọn cho bạn đồng hành một hình bé tự vẽ hoặc một bức ảnh, một bản nhỏ (khoảng 96 điểm ảnh) sẽ được gửi lên máy chủ và hiện bên cạnh tên của bé trên bảng xếp hạng cả nước, để các bạn khác mở bảng có thể nhìn thấy. Hình được dịch vụ AI kiểm tra ảnh trên Cloudflare tự động kiểm tra trước khi hiện, và nhân viên của chúng tôi có thể chặn; khi chưa qua kiểm tra hoặc bị chặn, các bạn khác chỉ thấy bạn đồng hành có sẵn hoặc một dấu X đỏ. Xin đừng dùng ảnh khuôn mặt mà bạn không muốn các bạn nhỏ khác nhìn thấy. Đổi hình sẽ thay bản đã gửi, và xoá tài khoản sẽ xoá hình đó.</p>
 </section>
 
 <section class="card">
@@ -68,7 +69,7 @@
 
 <section class="card">
   <h2>Trẻ em</h2>
-  <p>Chăm Luyện được làm cho trẻ em. Ứng dụng chỉ hỏi tên gọi, để bạn nhỏ chào bé; tên đó ở lại trên thiết bị, trừ khi tài khoản đã đăng nhập tham gia bảng xếp hạng cả nước như đã nêu. Trẻ em không tự tạo tài khoản và trong ứng dụng không có gì để mua. Mọi điều bé nghe đều được viết và thu sẵn; không có AI nào trò chuyện với bé.</p>
+  <p>Chăm Luyện được làm cho trẻ em. Ứng dụng chỉ hỏi tên gọi, để bạn nhỏ chào bé; tên đó ở lại trên thiết bị, trừ khi tài khoản đã đăng nhập tham gia bảng xếp hạng cả nước, khi đó tên, điểm cao nhất và hình bạn đồng hành (nếu được chọn) sẽ hiện cho các bạn nhỏ khác như đã nêu. Trẻ em không tự tạo tài khoản và trong ứng dụng không có gì để mua. Mọi điều bé nghe đều được viết và thu sẵn; không có AI nào trò chuyện với bé.</p>
 </section>
 
 <section class="card">

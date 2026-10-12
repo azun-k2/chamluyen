@@ -50,6 +50,7 @@
   <p><strong>Checked before use.</strong> Every downloaded voice is checked against a fingerprint built into the app, and is discarded if it does not match.</p>
   <p><strong>Your account, only when you sign in.</strong> There is no sign-up in the app: we create the account for a grown-up on request. Our server (Cloudflare Workers and a Cloudflare D1 database) then holds the phone number, the parent's name if given, a salted hash of the password (never the password itself), the plan records (package, start and end dates), the devices that are signed in (a device name such as "iPhone" and when it was last used) and the date of the last sign-in. It is used only to sign in, to know whether a plan covers today, and to help you when you write to us. It is not sold, not shared for advertising, and not used for analytics or tracking.</p>
   <p><strong>The national board, only with an account that has a plan.</strong> The app sends your child's best score in each break game together with the name typed in the app. Other children see that name, the score and the last four digits of the account's phone number, so two children with the same name can be told apart. Names are checked on our server, and an unsuitable one is shown as "Bạn nhỏ". Nothing else about your child's progress is sent.</p>
+  <p><strong>The buddy picture on the board.</strong> By default the board shows only a built-in buddy look, which carries no personal information. If a grown-up chooses to give the buddy a picture the child drew or a photo, a small copy of it (about 96 pixels) is sent to our server and shown next to the child's name on the national board, so other children who open the board can see it. The picture is checked automatically by an AI image-checking service on Cloudflare before it is shown, and our staff can block it; until it passes, or if it is blocked, other children see a built-in buddy or a red cross instead. Please do not use a photo of a face you would not want other children to see. Changing the buddy picture replaces the copy, and deleting the account removes it.</p>
 </section>
 
 <section class="card">
@@ -67,7 +68,7 @@
 
 <section class="card">
   <h2>Children</h2>
-  <p>Chăm Luyện is made for children. It asks only for a first name, so the buddy can greet the child; that name stays on the device unless a signed-in account is on the national board, as described above. Children do not create accounts, and there is nothing to buy in the app. Everything the child hears was written and recorded in advance; no AI talks to your child.</p>
+  <p>Chăm Luyện is made for children. It asks only for a first name, so the buddy can greet the child; that name stays on the device unless a signed-in account is on the national board, in which case the name, best scores and, if chosen, the buddy picture are shown to other children, as described above. Children do not create accounts, and there is nothing to buy in the app. Everything the child hears was written and recorded in advance; no AI talks to your child.</p>
 </section>
 
 <section class="card">
