@@ -1,4 +1,4 @@
-# Chăm Luyện
+# Chăm luyện
 
 Practice and tests for Vietnamese primary-school children, with a buddy who reads every question aloud.
 
