@@ -39,7 +39,24 @@
 
 <section class="card">
   <h2>Get in touch</h2>
-  <p>Email <a href="mailto:support@khangazun.com?subject=Ch%C4%83m%20luy%E1%BB%87n%20support&body=What%20happened%3A%0A%0A%0AWhat%20I%20expected%20instead%3A%0A%0A%0ADetails%20that%20help%3A%0A-%20iPhone%20or%20iPad%2C%20and%20its%20iOS%20version%3A%0A-%20Ch%C4%83m%20luy%E1%BB%87n%20version%3A%0A">support@khangazun.com</a>. The link opens a message with a short template. You can also write from the app: Settings, then Góp ý cho người làm ứng dụng.</p>
+  <ul class="contact-list">
+    <li>Email support at <a href="mailto:support@khangazun.com?subject=Ch%C4%83m%20luy%E1%BB%87n%20support&body=What%20happened%3A%0A%0A%0AWhat%20I%20expected%20instead%3A%0A%0A%0ADetails%20that%20help%3A%0A-%20iPhone%20or%20iPad%2C%20and%20its%20iOS%20version%3A%0A-%20Ch%C4%83m%20luy%E1%BB%87n%20version%3A%0A">support@khangazun.com</a>. The link opens a message with a short template. You can also write from the app: Settings, then Góp ý cho người làm ứng dụng.</li>
+    <li>Send a Zalo message to support: scan the QR code below.<img class="zalo-qr" src="zalo-qr.png" alt="Chăm luyện support Zalo QR code" width="168" height="168"></li>
+    <li>Send a quick message: fill in the form and press Send.
+  <form id="quick-form" class="quick-form" novalidate>
+    <div><label for="qf-name">Your name</label><input id="qf-name" type="text" name="name" maxlength="60" autocomplete="name" required></div>
+    <div><label for="qf-phone">Phone number</label><input id="qf-phone" type="tel" name="phone" maxlength="20" autocomplete="tel" inputmode="tel" required></div>
+    <fieldset><legend>What do you need?</legend>
+      <div class="choices"><label><input type="radio" name="kind" value="buy" checked> Buy an account</label><label><input type="radio" name="kind" value="support"> Technical support</label></div>
+      <div class="choices" data-for="buy"><label><input type="radio" name="opt-buy" value="1m" checked> 1 month</label><label><input type="radio" name="opt-buy" value="3m"> 3 months</label><label><input type="radio" name="opt-buy" value="6m"> 6 months</label><label><input type="radio" name="opt-buy" value="1y"> 1 year</label></div>
+      <div class="choices" data-for="support" hidden><label><input type="radio" name="opt-support" value="login" checked> Sign-in</label><label><input type="radio" name="opt-support" value="password"> Password</label><label><input type="radio" name="opt-support" value="help"> Help / question</label></div>
+    </fieldset>
+    <div><label for="qf-note">Note (optional)</label><textarea id="qf-note" name="note" rows="3" maxlength="300"></textarea></div>
+    <div class="hp" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+    <button type="submit">Send</button>
+    <p class="status" role="status" aria-live="polite"></p>
+  </form></li>
+  </ul>
 </section>
 
 <section class="card">
@@ -69,6 +86,7 @@
 <footer>
 <p>Chăm luyện for iPhone and iPad · <a href="./">Home</a> · <a href="support.html">Support</a> · <a href="privacy.html">Privacy</a> · <a href="mailto:support@khangazun.com?subject=Ch%C4%83m%20luy%E1%BB%87n%20support&body=What%20happened%3A%0A%0A%0AWhat%20I%20expected%20instead%3A%0A%0A%0ADetails%20that%20help%3A%0A-%20iPhone%20or%20iPad%2C%20and%20its%20iOS%20version%3A%0A-%20Ch%C4%83m%20luy%E1%BB%87n%20version%3A%0A">support@khangazun.com</a></p>
 </footer>
+<script src="contact.js" defer></script>
 </main>
 </body>
 </html>

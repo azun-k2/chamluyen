@@ -55,3 +55,23 @@ nav.links a {
 }
 footer { text-align: center; color: var(--muted); font-size: 14px; margin-top: 34px; }
 footer a { color: var(--muted); }
+
+/* Support page: contact options and the quick-message form (owner 2026-10-13) */
+.contact-list { padding-left: 1.2em; }
+.contact-list li { margin: 0.5em 0; }
+.zalo-qr { display: block; width: 168px; height: 168px; margin: 0.6em 0; border-radius: 12px; background: #fff; padding: 6px; border: 1px solid var(--line); }
+.quick-form { display: grid; gap: 0.9em; margin-top: 0.8em; max-width: 520px; }
+.quick-form label, .quick-form legend { font-weight: 700; }
+.quick-form fieldset { border: 1px solid var(--line); border-radius: 12px; padding: 0.7em 1em; margin: 0; }
+.quick-form input[type=text], .quick-form input[type=tel], .quick-form textarea, .quick-form select {
+  width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; padding: 0.6em 0.7em; border-radius: 10px;
+  border: 1px solid var(--line); background: var(--card); color: var(--ink);
+}
+.quick-form .choices { display: flex; flex-wrap: wrap; gap: 0.4em 1.1em; margin-top: 0.4em; }
+.quick-form .choices label { font-weight: 400; display: inline-flex; gap: 0.35em; align-items: center; }
+.quick-form button { font: inherit; font-weight: 700; font-size: 16px; padding: 0.75em 1.4em; border: 0; border-radius: 999px; background: var(--accent); color: #fff; cursor: pointer; justify-self: start; }
+.quick-form button:disabled { opacity: 0.6; cursor: default; }
+.quick-form .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.quick-form .status { min-height: 1.4em; margin: 0; font-weight: 700; }
+.quick-form .status.error { color: #b3261e; }
+@media (prefers-color-scheme: dark) { .quick-form .status.error { color: #ff8a80; } .quick-form button { color: #06210f; } }
