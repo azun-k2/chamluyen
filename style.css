@@ -75,3 +75,10 @@ footer a { color: var(--muted); }
 .quick-form .status { min-height: 1.4em; margin: 0; font-weight: 700; }
 .quick-form .status.error { color: #b3261e; }
 @media (prefers-color-scheme: dark) { .quick-form .status.error { color: #ff8a80; } .quick-form button { color: #06210f; } }
+.contact-box { border: 2px solid var(--line); border-radius: 16px; padding: 1em 1.2em; margin: 0.9em 0; background: color-mix(in srgb, var(--card) 70%, var(--bg)); }
+.contact-box:last-child { margin-bottom: 0; }
+.quick-form .req { color: #b3261e; }
+.quick-form .req-note { margin: 0; font-size: 14px; color: var(--muted); }
+@media (prefers-color-scheme: dark) { .quick-form .req { color: #ff8a80; } }
+.quick-form [hidden] { display: none; }
+.contact-box { border-color: color-mix(in srgb, var(--accent) 40%, var(--line)); }
