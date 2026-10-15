@@ -17,19 +17,20 @@ TEXT = {
                      "mac": "Tải ứng dụng cho máy Mac trên Mac App Store"},
            "alt": {"ios": "Tải về trên App Store", "android": "Tải nội dung trên Google Play", "mac": "Tải về trên Mac App Store"},
            "intro": "Chọn cửa hàng ứng dụng phù hợp với thiết bị của bé.",
-           "desc": "Tải Chăm luyện cho iPhone, iPad, Android, máy tính bảng và Mac.", "up": "../"},
+           "desc": "Tải Chăm luyện cho iPhone, iPad và Mac.", "up": "../"},
     "en": {"title": "Get the app", "soon": "Coming soon", "badge": {"ios": "download-on-the-app-store.svg", "android": "google-play-badge.png", "mac": "download-on-the-mac-app-store.svg"},
            "label": {"ios": "Get the app for iPhone and iPad on the App Store",
                      "android": "Get the app for Android phones and tablets (Samsung, Xiaomi, OPPO and others) on Google Play",
                      "mac": "Get the app for Mac on the Mac App Store"},
            "alt": {"ios": "Download on the App Store", "android": "Get it on Google Play", "mac": "Download on the Mac App Store"},
            "intro": "Pick the store that matches your child's device.",
-           "desc": "Get Chăm luyện for iPhone, iPad, Android phones and tablets, and Mac.", "up": ""},
+           "desc": "Get Chăm luyện for iPhone, iPad and Mac.", "up": ""},
 }
 URL = {"ios": f"https://apps.apple.com/app/id{APP['appStoreId']}?platform=iphone",
        "mac": f"https://apps.apple.com/app/id{APP['appStoreId']}?platform=mac",
        "android": f"https://play.google.com/store/apps/details?id={APP['playId']}"}
-ORDER = ("ios", "android", "mac")
+# Only the platforms the family file lists (Google Play was taken off the site, owner 2026-10-15: App Review 2.3.10).
+ORDER = tuple(st for st in ("ios", "android", "mac") if st in APP["platforms"])
 
 
 def cards(lang):
