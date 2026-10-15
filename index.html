@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Chăm luyện — school practice with a buddy</title>
-<meta name="description" content="Chăm luyện is a practice and test app for Vietnamese school children (lớp 1 to lớp 9): hints in steps, a buddy the child makes, and questions read aloud in a Northern or Southern accent (from lớp 1, more grades added over time). In Vietnamese, for iPhone, iPad, Mac and Android. No ads, no tracking.">
+<title>Chăm luyện — practice with a buddy, lớp 1 to lớp 9</title>
+<meta name="description" content="Chăm luyện for Vietnamese school children, lớp 1 to lớp 9: over 1,500 lessons and 10,000 questions, questions read aloud for the younger grades, hints in steps that never give the answer, a buddy the child makes, and limited play time. No ads, no tracking.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Chăm luyện">
-<meta property="og:title" content="Chăm luyện — school practice with a buddy">
-<meta property="og:description" content="Chăm luyện is a practice and test app for Vietnamese school children (lớp 1 to lớp 9): hints in steps, a buddy the child makes, and questions read aloud in a Northern or Southern accent (from lớp 1, more grades added over time). In Vietnamese, for iPhone, iPad, Mac and Android. No ads, no tracking.">
+<meta property="og:title" content="Chăm luyện — practice with a buddy">
+<meta property="og:description" content="Chăm luyện for Vietnamese school children, lớp 1 to lớp 9: over 1,500 lessons and 10,000 questions, questions read aloud for the younger grades, hints in steps that never give the answer, a buddy the child makes, and limited play time. No ads, no tracking.">
 <meta property="og:url" content="https://chamluyen.khangazun.com/">
 <meta property="og:image" content="https://chamluyen.khangazun.com/og.png">
 <meta property="og:image:width" content="1200">
@@ -19,6 +19,7 @@
 <link rel="icon" type="image/png" href="icon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="icon-180.png">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="home.css">
 <!-- family:head --><link rel="stylesheet" href="family/family.css">
 <link rel="alternate" hreflang="en" href="https://chamluyen.khangazun.com/">
 <link rel="alternate" hreflang="vi" href="https://chamluyen.khangazun.com/vi/">
@@ -26,25 +27,16 @@
 <script src="family/family.js" defer data-lang="en" data-page="index.html" data-langs="en,vi"></script>
 <!-- /family:head -->
 </head>
-<body>
+<body class="home">
 <main>
-<div class="hero">
-  <img class="icon" src="icon-512.png" alt="" width="112" height="112">
-  <h1>Chăm luyện</h1>
-  <p class="tagline">Practice and tests from lớp 1 to lớp 9, with a friendly buddy.</p>
-<!-- family:stores -->
-  <div class="family-stores">
-    <span class="family-store soon" title="Coming soon"><img src="family/badges/download-on-the-mac-app-store.svg" alt="Download on the Mac App Store: Coming soon" height="46"><span class="family-soon">Coming soon</span></span>
-    <span class="family-store soon" title="Coming soon"><img src="family/badges/download-on-the-app-store.svg" alt="Download on the App Store for iPhone and iPad: Coming soon" height="46"><span class="family-soon">Coming soon</span></span>
-    <span class="family-store soon" title="Coming soon"><img src="family/badges/google-play-badge.png" alt="Get it on Google Play: Coming soon" height="46"><span class="family-soon">Coming soon</span></span>
-  </div>
-  <!-- /family:stores -->
-<nav class="links">
-    <a href="./">Home</a>
-    <a href="download.html">Get the app</a>
+<header class="topbar">
+  <a class="brand" href="./"><img src="icon-192.png" alt="" width="40" height="40">Chăm luyện</a>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#grades">Grades</a>
+    <a href="#faq">FAQ</a>
     <a href="support.html">Support</a>
-    <a href="privacy.html">Privacy policy</a>
-    <a href="mailto:support@khangazun.com?subject=Ch%C4%83m%20luy%E1%BB%87n%20support&body=What%20happened%3A%0A%0A%0AWhat%20I%20expected%20instead%3A%0A%0A%0ADetails%20that%20help%3A%0A-%20Device%20%28iPhone%2C%20iPad%2C%20Mac%20or%20Android%29%2C%20and%20its%20system%20version%3A%0A-%20Ch%C4%83m%20luy%E1%BB%87n%20version%3A%0A">Email support</a>
+    <a class="cta keep" href="download.html">Get the app</a>
     <!-- family:nav --><a href="#more-apps">More apps</a>
   <details class="family-lang"><summary aria-label="Language: English"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.9 2.6 15.1 0 18M12 3c-2.6 2.9-2.6 15.1 0 18"/></svg><span>English</span></summary>
     <ul>
@@ -53,26 +45,191 @@
     </ul>
   </details><!-- /family:nav -->
   </nav>
-</div>
+</header>
 
-<section class="card">
-  <h2>What it does</h2>
-  <p>Chăm luyện helps Vietnamese school children practise and take short tests on their own, from lớp 1 to lớp 9: the school subjects of each grade (Toán, Tiếng Việt or Ngữ văn, Tiếng Anh, science, history and geography and more), and in lớp 1 also Đánh vần and Tập viết. It does not teach new lessons: it keeps the child company while they work, the way a patient older friend would. The app is in Vietnamese.</p>
-  <ul>
-    <li><strong>Questions read aloud from lớp 1 (more grades are added over time),</strong> in a Northern or a Southern accent, so a child who cannot read every word yet can still work alone. Tiếng Anh is read with an American English voice. Grades not yet voiced are shown as text for now.</li>
-    <li><strong>Hints in steps.</strong> First a nudge on how to work it out, then a bigger clue, then an explanation that counts along with the voice. The answer is never given straight away.</li>
-    <li><strong>Letters traced on an ô li grid.</strong> The buddy shows each stroke and says where the pen starts, goes and stops.</li>
-    <li><strong>A buddy the child makes.</strong> Pick an animal, colours, eyes, a mouth and an outfit such as a red scarf or a conical hat. The buddy encourages after a mistake and never scolds.</li>
-    <li><strong>Stars and break time.</strong> Tests and practice earn stars and minutes for a small game. Grown-ups set the rules and how long a break lasts.</li>
-    <li><strong>A national board for the break games.</strong> A child signed in to an account can see how their best score ranks among other children.</li>
-    <li><strong>No AI.</strong> Every line the child hears was written in advance; the buddy picks its lines by simple rules on the device.</li>
-  </ul>
-  <p class="note">Follows the 2018 national curriculum (Chương trình GDPT 2018) for every grade, with original questions. A few lessons of each subject are free to try; full access needs an account, which we create on request. Works on iPhone and iPad (iOS 17 or later), Mac (macOS 14 or later) and Android (8.0 or later), with the same account on all of them. The Mac and Android versions are in testing and will be linked here when they reach the stores.</p>
+<section class="hero2">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Lớp 1 to lớp 9 · iPhone, iPad, Mac, Android</span>
+      <h1>Homework, with a <em>little buddy</em> beside you.</h1>
+      <p class="lead">Chăm luyện sits next to your child while they practise: it reads questions aloud for the younger grades, gives hints in steps without ever giving the answer, and lets them play for a while once the work is done. Time-limited, ad-free.</p>
+      <div class="btns">
+        <a class="btn primary" href="download.html">Get the app</a>
+        <a class="btn ghost" href="#features">See how it works</a>
+      </div>
+      <ul class="trust">
+        <li>No ads</li><li>No tracking</li><li>No AI chat</li><li>Free sample lessons in every subject</li>
+      </ul>
+      <!-- family:stores -->
+  <div class="family-stores">
+    <span class="family-store soon" title="Coming soon"><img src="family/badges/download-on-the-mac-app-store.svg" alt="Download on the Mac App Store: Coming soon" height="46"><span class="family-soon">Coming soon</span></span>
+    <span class="family-store soon" title="Coming soon"><img src="family/badges/download-on-the-app-store.svg" alt="Download on the App Store for iPhone and iPad: Coming soon" height="46"><span class="family-soon">Coming soon</span></span>
+    <span class="family-store soon" title="Coming soon"><img src="family/badges/google-play-badge.png" alt="Get it on Google Play: Coming soon" height="46"><span class="family-soon">Coming soon</span></span>
+  </div>
+  <!-- /family:stores -->
+    </div>
+    <div class="hero-art">
+      <div class="device tilt"><img src="img/home.jpg" alt="Chăm luyện's home screen: a cat buddy in a red neckerchief greets the child, with the subjects beside it" width="1100" height="825"></div>
+      <div class="float a">⭐ Finish work, then play</div>
+      <div class="float b">🔊 Questions read aloud</div>
+    </div>
+  </div>
 </section>
 
-<section class="card">
-  <h2>Privacy</h2>
-  <p>Chăm luyện has no ads, no analytics and no tracking. Without an account, nothing about your child leaves the device; the app only downloads extra voices, which are plain sound files. With an account the app also talks to our server, as the policy explains. The full <a href="privacy.html">privacy policy</a> has the details.</p>
+<section class="strip" aria-label="Numbers">
+  <div class="wrap">
+    <div><b>1 – 9</b><span>grades, following the 2018 national curriculum</span></div>
+    <div><b>1,500+</b><span>lessons</span></div>
+    <div><b>10,000+</b><span>original questions</span></div>
+    <div><b>0</b><span>ads, 0 trackers</span></div>
+  </div>
+</section>
+
+<section class="section wrap" id="features">
+  <div class="row">
+    <div class="text">
+      <span class="eyebrow">Read aloud</span>
+      <h2>Not reading well yet? They can still do it alone.</h2>
+      <p>The younger grades have every question read aloud in a Northern or Southern accent, with a girl's or a boy's voice. Parents don't have to read each question, and children don't have to wait for anyone.</p>
+      <ul class="ticks">
+        <li>Northern or Southern accent, girl or boy voice</li>
+        <li>Tap “Nghe” to hear a question or each answer again</li>
+        <li>English questions are read in an American voice</li>
+      </ul>
+      <p class="note" style="margin-top:14px;font-size:15px">Voices are available from lớp 1; the higher grades are being added.</p>
+    </div>
+    <div class="device"><img src="img/test.jpg" alt="A lớp 1 maths question: how many carrots? The buddy is on the left and each answer has a listen button" width="1100" height="825"></div>
+  </div>
+</section>
+
+<section class="section wrap">
+  <div class="row flip">
+    <div class="text">
+      <span class="eyebrow">Hints in steps</span>
+      <h2>Wrong is fine. Let's look again together.</h2>
+      <p>Children think first. When they are stuck the app helps a little at a time and never hands over the answer.</p>
+      <ol class="steps">
+        <li><span class="n">1</span><div><b>A nudge on how to work</b><span>Shows how to get started.</span></div></li>
+        <li><span class="n">2</span><div><b>A bigger hint</b><span>Does the first part with them; they finish the rest.</span></div></li>
+        <li><span class="n">3</span><div><b>A step-by-step explanation</b><span>The buddy talks through it slowly, picture by picture.</span></div></li>
+      </ol>
+    </div>
+    <div class="device"><img src="img/shelf.jpg" alt="The lesson list for lớp 1 maths; each lesson has three stars to earn" width="1100" height="825"></div>
+  </div>
+</section>
+
+<section class="section wrap">
+  <div class="row">
+    <div class="text">
+      <span class="eyebrow">Handwriting</span>
+      <h2>Write letters on ruled lines, one stroke at a time.</h2>
+      <p>The buddy shows where to put the pen down, which way to go and where to lift. Children write with a finger, and the app gently says so when a stroke starts in the wrong place.</p>
+      <ul class="ticks">
+        <li>All 29 letters, with a green start dot and arrows to follow</li>
+        <li>Watch how to write it again any time</li>
+        <li>Praise for finishing, never a comment on neatness</li>
+      </ul>
+    </div>
+    <div class="device"><img src="img/trace.jpg" alt="Tracing a letter on ruled lines with the buddy explaining each stroke" width="1100" height="825"></div>
+  </div>
+</section>
+
+<section class="section wrap">
+  <div class="row flip">
+    <div class="text">
+      <span class="eyebrow">A buddy of their own</span>
+      <h2>A friend the child creates.</h2>
+      <p>Children pick an animal, fur colour, eyes, a hat and clothes. They can also draw a buddy of their own, or turn a photo into one. When they get something wrong the buddy encourages and never scolds.</p>
+      <ul class="ticks">
+        <li>Many animals, colours, hats, outfits and accessories</li>
+        <li>Draw a new buddy (the photo option is opened by a grown-up)</li>
+        <li>The buddy uses the child's name and reminds them to practise daily</li>
+      </ul>
+    </div>
+    <div class="device"><img src="img/buddy.jpg" alt="The buddy maker: choose an animal, colour, eyes and a hat" width="1100" height="825"></div>
+  </div>
+</section>
+
+<section class="section wrap" id="play">
+  <div class="center">
+    <span class="eyebrow">Limited play time</span>
+    <h2>Work first, play after, and keep to a schedule.</h2>
+    <p>Earn enough stars and the child gets a few minutes of play. Each round lasts at most a minute, and when time is up the buddy sends them back to learning. Parents set every number.</p>
+  </div>
+  <div class="games" style="margin-top:34px">
+    <div class="device"><img src="img/games.jpg" alt="The break-time game list with today's remaining play time" width="1100" height="825"></div>
+    <div>
+      <ul class="ticks" style="margin-top:0">
+        <li>Parents choose the stars needed, the minutes earned and the daily maximum</li>
+        <li>See how many minutes the child has played today</li>
+        <li>Redoing an old lesson earns no play time, so new work comes first</li>
+        <li>A nationwide board for friendly competition, plus a ranking by stars</li>
+      </ul>
+      <div class="chips">
+        <span class="chip on">🎈 Balloon pop</span><span class="chip on">🏹 Archer</span><span class="chip on">🐟 Fish scoop</span>
+        <span class="chip on">🏎️ Racing</span><span class="chip on">👻 Ghost shooter</span><span class="chip on">🐍 Snake and moles</span>
+        <span class="chip on">🧸 Claw machine</span><span class="chip on">🎯 Marbles</span><span class="chip on">🐦 Bamboo flyer</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap" id="grades">
+  <div class="center">
+    <span class="eyebrow">One app for many school years</span>
+    <h2>Lớp 1 to lớp 9, subject by subject.</h2>
+    <p>Over 1,500 lessons and 10,000 questions we wrote ourselves, following the 2018 national curriculum. Every lesson has three stars to earn.</p>
+  </div>
+  <div class="grades">
+    <div class="grade"><small>Lớp</small><b>1</b></div><div class="grade"><small>Lớp</small><b>2</b></div><div class="grade"><small>Lớp</small><b>3</b></div>
+    <div class="grade"><small>Lớp</small><b>4</b></div><div class="grade"><small>Lớp</small><b>5</b></div><div class="grade"><small>Lớp</small><b>6</b></div>
+    <div class="grade"><small>Lớp</small><b>7</b></div><div class="grade"><small>Lớp</small><b>8</b></div><div class="grade"><small>Lớp</small><b>9</b></div>
+  </div>
+  <div class="subjects">
+    <span>Maths</span><span>Vietnamese</span><span>Literature</span><span>English</span><span>Science</span><span>Natural science</span>
+    <span>History and Geography</span><span>Ethics</span><span>Civic education</span><span>Nature and Society</span><span>Informatics</span><span>Technology</span>
+    <span>Spelling and reading</span><span>Handwriting</span>
+  </div>
+  <p class="center" style="margin-top:14px;font-size:15px">Subjects vary by grade. The app is in Vietnamese.</p>
+</section>
+
+<section class="band" id="safe">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Peace of mind</span>
+      <h2>A quiet place to learn.</h2>
+    </div>
+    <div class="cards">
+      <div class="fcard"><div class="ico">🚫</div><h3>No ads</h3><p>No banners, no interrupting videos, no in-game purchases.</p></div>
+      <div class="fcard"><div class="ico">🔒</div><h3>No tracking</h3><p>No behavioural analytics and no third-party tools. Progress is stored on the device.</p></div>
+      <div class="fcard"><div class="ico">🧠</div><h3>No AI chat</h3><p>Everything the child hears is written in advance and reviewed. The buddy picks its words with simple rules on the device.</p></div>
+    </div>
+    <p class="center" style="margin-top:22px;font-size:16px">An account is just a parent's phone number and a name. Grown-up actions (reminders, reporting a question, suggesting a game, using a photo) sit behind a small multiplication question. <a href="privacy.html">Read the privacy policy</a>.</p>
+  </div>
+</section>
+
+<section class="section wrap" id="faq">
+  <div class="center"><span class="eyebrow">FAQ</span><h2>What parents ask</h2></div>
+  <div class="faq">
+    <details><summary>Does it read the questions aloud?</summary><p>Yes, from lớp 1 (the higher grades are being added), in a Northern or Southern accent. A grade without a voice yet shows the text instead.</p></details>
+    <details><summary>Does it teach new lessons?</summary><p>No. Chăm luyện is where children practise and take short tests for each grade's subjects. It sits beside them while they work, like a patient older friend.</p></details>
+    <details><summary>Will a hint give the answer away?</summary><p>No. Hints go in steps: how to work, then a bigger hint, then an explanation. The app never gives the answer straight away.</p></details>
+    <details><summary>Can a child play all day?</summary><p>No. They must earn stars to get play time, and parents set the daily maximum.</p></details>
+    <details><summary>Which devices does it run on?</summary><p>iPhone and iPad (iOS 17 or later), Mac (macOS 14 or later) and Android (8.0 or later), with one account for all. See <a href="download.html">Get the app</a> for which stores are live.</p></details>
+    <details><summary>How do I get a full account?</summary><p>Every subject has a few free sample lessons. For full access, contact us through the <a href="support.html">Support</a> page.</p></details>
+    <details><summary>Is my child's data safe?</summary><p>The app has no ads or tracking. Without an account, nothing about the child leaves the device. Details are in the <a href="privacy.html">privacy policy</a>.</p></details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="box">
+    <h2>Give your child a study buddy.</h2>
+    <p>Download Chăm luyện and try a few free lessons in every subject.</p>
+    <div class="btns" style="justify-content:center">
+      <a class="btn primary" href="download.html">Get the app</a>
+      <a class="btn ghost" href="support.html">Ask us</a>
+    </div>
+  </div>
 </section>
 
 <!-- family:apps -->

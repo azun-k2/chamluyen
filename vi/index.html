@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Chăm luyện — luyện bài cùng bạn nhỏ</title>
-<meta name="description" content="Chăm luyện giúp học sinh (từ lớp 1 đến lớp 9) luyện bài và làm bài kiểm tra: gợi ý từng bước, một người bạn do bé tự tạo, và câu hỏi được đọc to từ lớp 1 (các lớp trên được thêm dần) bằng giọng miền Bắc hoặc miền Nam. Cho iPhone, iPad, Mac và Android. Không quảng cáo, không theo dõi.">
+<title>Chăm luyện — làm bài cùng bạn nhỏ, từ lớp 1 đến lớp 9</title>
+<meta name="description" content="Chăm luyện cho bé từ lớp 1 đến lớp 9: hơn 1.500 bài và 10.000 câu hỏi, đề đọc to cho các lớp nhỏ, gợi ý từng bước không lộ đáp án, một người bạn do bé tự tạo và giờ chơi có giới hạn. Không quảng cáo, không theo dõi.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Chăm luyện">
-<meta property="og:title" content="Chăm luyện — luyện bài cùng bạn nhỏ">
-<meta property="og:description" content="Chăm luyện giúp học sinh (từ lớp 1 đến lớp 9) luyện bài và làm bài kiểm tra: gợi ý từng bước, một người bạn do bé tự tạo, và câu hỏi được đọc to từ lớp 1 (các lớp trên được thêm dần) bằng giọng miền Bắc hoặc miền Nam. Cho iPhone, iPad, Mac và Android. Không quảng cáo, không theo dõi.">
+<meta property="og:title" content="Chăm luyện — làm bài cùng bạn nhỏ">
+<meta property="og:description" content="Chăm luyện cho bé từ lớp 1 đến lớp 9: hơn 1.500 bài và 10.000 câu hỏi, đề đọc to cho các lớp nhỏ, gợi ý từng bước không lộ đáp án, một người bạn do bé tự tạo và giờ chơi có giới hạn. Không quảng cáo, không theo dõi.">
 <meta property="og:url" content="https://chamluyen.khangazun.com/vi/">
 <meta property="og:image" content="https://chamluyen.khangazun.com/og.png">
 <meta property="og:image:width" content="1200">
@@ -19,6 +19,7 @@
 <link rel="icon" type="image/png" href="../icon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="../icon-180.png">
 <link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../home.css">
 <!-- family:head --><link rel="stylesheet" href="../family/family.css">
 <link rel="alternate" hreflang="en" href="https://chamluyen.khangazun.com/">
 <link rel="alternate" hreflang="vi" href="https://chamluyen.khangazun.com/vi/">
@@ -26,25 +27,16 @@
 <script src="../family/family.js" defer data-lang="vi" data-page="index.html" data-langs="en,vi"></script>
 <!-- /family:head -->
 </head>
-<body>
+<body class="home">
 <main>
-<div class="hero">
-  <img class="icon" src="../icon-512.png" alt="" width="112" height="112">
-  <h1>Chăm luyện</h1>
-  <p class="tagline">Luyện bài và làm bài kiểm tra từ lớp 1 đến lớp 9, có bạn nhỏ đồng hành.</p>
-<!-- family:stores -->
-  <div class="family-stores">
-    <span class="family-store soon" title="Sắp ra mắt"><img src="../family/badges/mac-vi.svg" alt="Tải về trên Mac App Store: Sắp ra mắt" height="46"><span class="family-soon">Sắp ra mắt</span></span>
-    <span class="family-store soon" title="Sắp ra mắt"><img src="../family/badges/ios-vi.svg" alt="Tải về trên App Store cho iPhone và iPad: Sắp ra mắt" height="46"><span class="family-soon">Sắp ra mắt</span></span>
-    <span class="family-store soon" title="Sắp ra mắt"><img src="../family/badges/play-vi.png" alt="Tải nội dung trên Google Play: Sắp ra mắt" height="46"><span class="family-soon">Sắp ra mắt</span></span>
-  </div>
-  <!-- /family:stores -->
-<nav class="links">
-    <a href="./">Trang chủ</a>
-    <a href="download.html">Tải ứng dụng</a>
+<header class="topbar">
+  <a class="brand" href="./"><img src="../icon-192.png" alt="" width="40" height="40">Chăm luyện</a>
+  <nav>
+    <a href="#tinh-nang">Tính năng</a>
+    <a href="#lop-mon">Lớp và môn</a>
+    <a href="#hoi-dap">Hỏi đáp</a>
     <a href="support.html">Hỗ trợ</a>
-    <a href="privacy.html">Chính sách quyền riêng tư</a>
-    <a href="mailto:support@khangazun.com?subject=H%E1%BB%97%20tr%E1%BB%A3%20Ch%C4%83m%20luy%E1%BB%87n&body=Chuy%E1%BB%87n%20g%C3%AC%20%C4%91%C3%A3%20x%E1%BA%A3y%20ra%3A%0A%0A%0A%C4%90i%E1%BB%81u%20t%C3%B4i%20mong%20%C4%91%E1%BB%A3i%3A%0A%0A%0ATh%C3%B4ng%20tin%20th%C3%AAm%3A%0A-%20Thi%E1%BA%BFt%20b%E1%BB%8B%20%28iPhone%2C%20iPad%2C%20Mac%20hay%20Android%29%2C%20v%C3%A0%20phi%C3%AAn%20b%E1%BA%A3n%20h%E1%BB%87%20%C4%91i%E1%BB%81u%20h%C3%A0nh%3A%0A-%20Phi%C3%AAn%20b%E1%BA%A3n%20Ch%C4%83m%20luy%E1%BB%87n%3A%0A">Gửi email hỗ trợ</a>
+    <a class="cta keep" href="download.html">Tải ứng dụng</a>
     <!-- family:nav --><a href="#more-apps">Ứng dụng khác</a>
   <details class="family-lang"><summary aria-label="Ngôn ngữ: Tiếng Việt"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.9 2.6 15.1 0 18M12 3c-2.6 2.9-2.6 15.1 0 18"/></svg><span>Tiếng Việt</span></summary>
     <ul>
@@ -53,26 +45,190 @@
     </ul>
   </details><!-- /family:nav -->
   </nav>
-</div>
+</header>
 
-<section class="card">
-  <h2>Ứng dụng làm gì</h2>
-  <p>Chăm luyện giúp các bé tự luyện bài và làm những bài kiểm tra ngắn: từ lớp 1 đến lớp 9, theo các môn của từng lớp (Toán, Tiếng Việt hoặc Ngữ văn, Tiếng Anh, khoa học, lịch sử và địa lí, v.v.), riêng lớp 1 còn có Đánh vần và Tập viết. Ứng dụng không dạy bài mới: nó ở bên bé trong lúc bé làm bài, như một người bạn lớn kiên nhẫn.</p>
-  <ul>
-    <li><strong>Câu hỏi được đọc to từ lớp 1 (các lớp trên được thêm dần),</strong> bằng giọng miền Bắc hoặc miền Nam, để bé chưa đọc thạo vẫn tự làm bài được. Phần Tiếng Anh được đọc bằng giọng Anh Mỹ. Lớp nào chưa có giọng đọc thì hiện chữ.</li>
-    <li><strong>Gợi ý từng bước.</strong> Đầu tiên là cách làm, sau đó một gợi ý lớn hơn, rồi một lời giải thích đếm theo giọng đọc. Ứng dụng không bao giờ đưa đáp án ngay.</li>
-    <li><strong>Tập viết chữ trên ô li.</strong> Bạn nhỏ chỉ từng nét và nói chỗ đặt bút, hướng đi và chỗ dừng bút.</li>
-    <li><strong>Một người bạn do bé tự tạo.</strong> Chọn con vật, màu sắc, mắt, miệng và trang phục như khăn quàng đỏ hay nón lá. Khi bé làm sai, bạn nhỏ động viên, không bao giờ trách mắng.</li>
-    <li><strong>Ngôi sao và giờ nghỉ.</strong> Bài kiểm tra và giờ luyện tập mang lại ngôi sao và vài phút chơi một trò nhỏ. Người lớn đặt điều kiện và độ dài giờ nghỉ.</li>
-    <li><strong>Bảng xếp hạng cả nước cho các trò chơi giờ nghỉ.</strong> Bé đăng nhập tài khoản có thể xem điểm cao nhất của mình đứng thứ mấy so với các bạn khác.</li>
-    <li><strong>Không dùng AI.</strong> Mọi câu bé nghe đều được viết sẵn; bạn nhỏ chọn câu nói theo những quy tắc đơn giản ngay trên thiết bị.</li>
-  </ul>
-  <p class="note">Theo Chương trình GDPT 2018 cho từng lớp, với câu hỏi do chúng tôi tự soạn. Mỗi môn có vài bài học thử miễn phí; dùng đầy đủ cần tài khoản, do chúng tôi tạo khi được yêu cầu. Dùng được trên iPhone và iPad (iOS 17 trở lên), Mac (macOS 14 trở lên) và Android (8.0 trở lên), cùng một tài khoản cho tất cả. Bản Mac và Android đang chạy thử và sẽ có liên kết ở đây khi lên kho ứng dụng.</p>
+<section class="hero2">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Lớp 1 đến lớp 9 · iPhone, iPad, Mac, Android</span>
+      <h1>Bé tự làm bài, có <em>bạn nhỏ</em> bên cạnh.</h1>
+      <p class="lead">Chăm luyện ngồi cạnh bé lúc làm bài: đọc to đề cho các lớp nhỏ, gợi ý từng bước mà không nói đáp án, và cho bé chơi một lúc sau khi học xong. Có giờ giấc, không quảng cáo.</p>
+      <div class="btns">
+        <a class="btn primary" href="download.html">Tải ứng dụng</a>
+        <a class="btn ghost" href="#tinh-nang">Xem bé học thế nào</a>
+      </div>
+      <ul class="trust">
+        <li>Không quảng cáo</li><li>Không theo dõi</li><li>Không chat với AI</li><li>Mỗi môn có bài học thử</li>
+      </ul>
+      <!-- family:stores -->
+  <div class="family-stores">
+    <span class="family-store soon" title="Sắp ra mắt"><img src="../family/badges/mac-vi.svg" alt="Tải về trên Mac App Store: Sắp ra mắt" height="46"><span class="family-soon">Sắp ra mắt</span></span>
+    <span class="family-store soon" title="Sắp ra mắt"><img src="../family/badges/ios-vi.svg" alt="Tải về trên App Store cho iPhone và iPad: Sắp ra mắt" height="46"><span class="family-soon">Sắp ra mắt</span></span>
+    <span class="family-store soon" title="Sắp ra mắt"><img src="../family/badges/play-vi.png" alt="Tải nội dung trên Google Play: Sắp ra mắt" height="46"><span class="family-soon">Sắp ra mắt</span></span>
+  </div>
+  <!-- /family:stores -->
+    </div>
+    <div class="hero-art">
+      <div class="device tilt"><img src="../img/home.jpg" alt="Màn hình chính của Chăm luyện: bạn mèo đeo khăn quàng đỏ chào bé và các môn học" width="1100" height="825"></div>
+      <div class="float a">⭐ Làm bài xong, được chơi</div>
+      <div class="float b">🔊 Đề được đọc to</div>
+    </div>
+  </div>
 </section>
 
-<section class="card">
-  <h2>Quyền riêng tư</h2>
-  <p>Chăm luyện không có quảng cáo, phân tích hay theo dõi. Khi không có tài khoản, không thông tin nào về bé rời khỏi thiết bị; ứng dụng chỉ tải thêm giọng đọc, vốn là các tệp âm thanh. Khi có tài khoản, ứng dụng còn trao đổi với máy chủ của chúng tôi như chính sách mô tả. <a href="privacy.html">Chính sách quyền riêng tư</a> đầy đủ có chi tiết.</p>
+<section class="strip" aria-label="Con số">
+  <div class="wrap">
+    <div><b>1 – 9</b><span>các lớp, theo Chương trình GDPT 2018</span></div>
+    <div><b>1.500+</b><span>bài học</span></div>
+    <div><b>10.000+</b><span>câu hỏi tự soạn</span></div>
+    <div><b>0</b><span>quảng cáo, 0 theo dõi</span></div>
+  </div>
+</section>
+
+<section class="section wrap" id="tinh-nang">
+  <div class="row">
+    <div class="text">
+      <span class="eyebrow">Nghe đề</span>
+      <h2>Chưa đọc thạo cũng tự làm bài được.</h2>
+      <p>Các lớp nhỏ được đọc to từng câu hỏi bằng giọng Bắc hoặc giọng Nam, giọng nam hoặc nữ. Bố mẹ không phải ngồi đọc từng câu, bé không phải chờ ai.</p>
+      <ul class="ticks">
+        <li>Chọn giọng miền Bắc hoặc miền Nam, giọng nam hoặc nữ</li>
+        <li>Bấm “Nghe” để nghe lại câu hỏi hay từng đáp án</li>
+        <li>Phần Tiếng Anh được đọc bằng giọng Anh Mỹ</li>
+      </ul>
+      <p class="note" style="margin-top:14px;font-size:15px">Giọng đọc có sẵn từ lớp 1, các lớp trên được thêm dần.</p>
+    </div>
+    <div class="device"><img src="../img/test.jpg" alt="Một câu hỏi Toán lớp 1: Có mấy củ cà rốt? Bạn mèo ở bên cạnh, các đáp án có nút Nghe" width="1100" height="825" ></div>
+  </div>
+</section>
+
+<section class="section wrap">
+  <div class="row flip">
+    <div class="text">
+      <span class="eyebrow">Gợi ý từng bước</span>
+      <h2>Sai không sao, mình cùng xem lại.</h2>
+      <p>Bé tự nghĩ trước. Khi vướng, ứng dụng giúp từng chút một và không bao giờ đưa đáp án ngay.</p>
+      <ol class="steps">
+        <li><span class="n">1</span><div><b>Nhắc cách làm</b><span>Chỉ cho bé cách bắt đầu.</span></div></li>
+        <li><span class="n">2</span><div><b>Gợi ý lớn hơn</b><span>Cùng làm một đoạn, bé làm nốt phần còn lại.</span></div></li>
+        <li><span class="n">3</span><div><b>Giải thích từng bước</b><span>Bạn nhỏ nói chậm theo từng hình, để bé hiểu vì sao.</span></div></li>
+      </ol>
+    </div>
+    <div class="device"><img src="../img/shelf.jpg" alt="Danh sách bài học môn Toán lớp 1, mỗi bài có ba ngôi sao để đạt" width="1100" height="825" ></div>
+  </div>
+</section>
+
+<section class="section wrap">
+  <div class="row">
+    <div class="text">
+      <span class="eyebrow">Tập viết</span>
+      <h2>Viết chữ trên ô li, từng nét một.</h2>
+      <p>Bạn nhỏ chỉ chỗ đặt bút, hướng đi và chỗ dừng bút. Bé tự viết bằng ngón tay, ứng dụng nhắc nhẹ khi bé bắt đầu sai chỗ.</p>
+      <ul class="ticks">
+        <li>Đủ 29 chữ cái, có dấu chấm xanh và mũi tên chỉ đường</li>
+        <li>Xem lại cách viết bất cứ lúc nào</li>
+        <li>Khen khi bé hoàn thành, không chê chữ xấu</li>
+      </ul>
+    </div>
+    <div class="device"><img src="../img/trace.jpg" alt="Tập viết chữ cái trên ô li, bạn nhỏ hướng dẫn từng nét" width="1100" height="825" ></div>
+  </div>
+</section>
+
+<section class="section wrap">
+  <div class="row flip">
+    <div class="text">
+      <span class="eyebrow">Bạn đồng hành</span>
+      <h2>Một người bạn do chính bé tạo ra.</h2>
+      <p>Bé chọn con vật, màu lông, đôi mắt, mũ và áo. Có thể tự vẽ một người bạn riêng, hoặc biến một bức ảnh thành bạn. Khi bé làm sai, bạn nhỏ động viên, không bao giờ trách.</p>
+      <ul class="ticks">
+        <li>Nhiều con vật, màu sắc, mũ, áo và phụ kiện</li>
+        <li>Tự vẽ bạn mới (cần người lớn mở phần dùng ảnh)</li>
+        <li>Bạn nhỏ gọi tên bé và nhắc bé học mỗi ngày</li>
+      </ul>
+    </div>
+    <div class="device"><img src="../img/buddy.jpg" alt="Màn hình tạo bạn đồng hành: chọn con vật, màu sắc, mắt và mũ" width="1100" height="825" ></div>
+  </div>
+</section>
+
+<section class="section wrap" id="gio-choi">
+  <div class="center">
+    <span class="eyebrow">Giờ chơi có giới hạn</span>
+    <h2>Làm bài trước, chơi sau, và có giờ giấc.</h2>
+    <p>Làm bài đủ ngôi sao thì bé được vài phút chơi. Mỗi ván tối đa một phút, hết giờ là bạn nhỏ nhắc quay lại học. Bố mẹ đặt mọi con số.</p>
+  </div>
+  <div class="games" style="margin-top:34px">
+    <div class="device"><img src="../img/games.jpg" alt="Danh sách các trò chơi giờ nghỉ và thời gian chơi còn lại hôm nay" width="1100" height="825" ></div>
+    <div>
+      <ul class="ticks" style="margin-top:0">
+        <li>Bố mẹ chọn số sao cần đạt, số phút thưởng và số phút tối đa mỗi ngày</li>
+        <li>Xem được “hôm nay bé đã chơi bao nhiêu phút”</li>
+        <li>Làm lại bài cũ thì không cộng thêm giờ chơi, bé phải học bài mới</li>
+        <li>Bảng xếp hạng cả nước cho bé thi đua vui, và xếp hạng theo số sao</li>
+      </ul>
+      <div class="chips">
+        <span class="chip on">🎈 Bắt bóng bay</span><span class="chip on">🏹 Cung thủ</span><span class="chip on">🐟 Vớt cá</span>
+        <span class="chip on">🏎️ Đua xe</span><span class="chip on">👻 Bắn ma</span><span class="chip on">🐍 Rắn săn chuột</span>
+        <span class="chip on">🧸 Gắp thú bông</span><span class="chip on">🎯 Bắn bi</span><span class="chip on">🐦 Bay qua cột tre</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap" id="lop-mon">
+  <div class="center">
+    <span class="eyebrow">Một ứng dụng cho nhiều năm học</span>
+    <h2>Từ lớp 1 đến lớp 9, theo từng môn của từng lớp.</h2>
+    <p>Hơn 1.500 bài và hơn 10.000 câu hỏi do chúng tôi tự soạn theo Chương trình GDPT 2018. Mỗi bài có ba ngôi sao để đạt.</p>
+  </div>
+  <div class="grades">
+    <div class="grade"><small>Lớp</small><b>1</b></div><div class="grade"><small>Lớp</small><b>2</b></div><div class="grade"><small>Lớp</small><b>3</b></div>
+    <div class="grade"><small>Lớp</small><b>4</b></div><div class="grade"><small>Lớp</small><b>5</b></div><div class="grade"><small>Lớp</small><b>6</b></div>
+    <div class="grade"><small>Lớp</small><b>7</b></div><div class="grade"><small>Lớp</small><b>8</b></div><div class="grade"><small>Lớp</small><b>9</b></div>
+  </div>
+  <div class="subjects">
+    <span>Toán</span><span>Tiếng Việt</span><span>Ngữ văn</span><span>Tiếng Anh</span><span>Khoa học</span><span>Khoa học tự nhiên</span>
+    <span>Lịch sử và Địa lí</span><span>Đạo đức</span><span>Giáo dục công dân</span><span>Tự nhiên và Xã hội</span><span>Tin học</span><span>Công nghệ</span>
+    <span>Đánh vần và Tập đọc</span><span>Tập viết</span>
+  </div>
+</section>
+
+<section class="band" id="an-toan">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">An tâm cho bố mẹ</span>
+      <h2>Một nơi học yên tĩnh cho bé.</h2>
+    </div>
+    <div class="cards">
+      <div class="fcard"><div class="ico">🚫</div><h3>Không quảng cáo</h3><p>Không biểu ngữ, không video chen ngang, không mua đồ trong trò chơi.</p></div>
+      <div class="fcard"><div class="ico">🔒</div><h3>Không theo dõi</h3><p>Không phân tích hành vi, không công cụ của bên thứ ba. Tiến độ học lưu ngay trên thiết bị.</p></div>
+      <div class="fcard"><div class="ico">🧠</div><h3>Không chat với AI</h3><p>Mọi câu bé nghe đều được viết sẵn và xem lại. Bạn nhỏ chọn lời theo quy tắc đơn giản ngay trên máy.</p></div>
+    </div>
+    <p class="center" style="margin-top:22px;font-size:16px">Tài khoản chỉ gồm số điện thoại phụ huynh và tên gọi. Các phần cần người lớn (nhắc học, báo lỗi câu hỏi, gợi ý trò chơi, dùng ảnh) có một phép nhân nhẹ trước khi mở. <a href="privacy.html">Xem chính sách quyền riêng tư</a>.</p>
+  </div>
+</section>
+
+<section class="section wrap" id="hoi-dap">
+  <div class="center"><span class="eyebrow">Hỏi đáp</span><h2>Bố mẹ thường hỏi</h2></div>
+  <div class="faq">
+    <details><summary>Chăm luyện có đọc to đề không?</summary><p>Có, từ lớp 1 (các lớp trên được thêm dần), bằng giọng miền Bắc hoặc miền Nam. Lớp nào chưa có giọng đọc thì hiện chữ.</p></details>
+    <details><summary>Ứng dụng dạy bé bài mới à?</summary><p>Không. Chăm luyện là nơi bé luyện bài và làm bài kiểm tra ngắn, bám các môn của từng lớp. Ứng dụng ở bên bé trong lúc làm bài, như một người bạn lớn kiên nhẫn.</p></details>
+    <details><summary>Bé có bị lộ đáp án khi xin gợi ý không?</summary><p>Không. Gợi ý đi từng bước: nhắc cách làm, rồi gợi ý lớn hơn, rồi giải thích. Ứng dụng không bao giờ đưa đáp án ngay.</p></details>
+    <details><summary>Bé có chơi mãi được không?</summary><p>Không. Bé phải làm bài đủ sao mới có giờ chơi, và mỗi ngày có số phút tối đa do bố mẹ đặt.</p></details>
+    <details><summary>Dùng được trên thiết bị nào?</summary><p>iPhone và iPad (iOS 17 trở lên), Mac (macOS 14 trở lên) và Android (8.0 trở lên), cùng một tài khoản. Xem trang <a href="download.html">Tải ứng dụng</a> để biết bản nào đã có trên cửa hàng.</p></details>
+    <details><summary>Làm sao để có tài khoản dùng đầy đủ?</summary><p>Mỗi môn có vài bài học thử miễn phí. Để dùng đầy đủ, hãy liên hệ chúng tôi qua trang <a href="support.html">Hỗ trợ</a>.</p></details>
+    <details><summary>Dữ liệu của bé có được bảo vệ không?</summary><p>Ứng dụng không có quảng cáo hay theo dõi. Khi chưa có tài khoản, thông tin về bé không rời khỏi thiết bị. Chi tiết ở <a href="privacy.html">chính sách quyền riêng tư</a>.</p></details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="box">
+    <h2>Cho bé một người bạn học cùng.</h2>
+    <p>Tải Chăm luyện, để bé thử vài bài miễn phí ở mỗi môn.</p>
+    <div class="btns" style="justify-content:center">
+      <a class="btn primary" href="download.html">Tải ứng dụng</a>
+      <a class="btn ghost" href="support.html">Hỏi chúng tôi</a>
+    </div>
+  </div>
 </section>
 
 <!-- family:apps -->
@@ -80,29 +236,29 @@
   <h2 id="more-apps-title">Các ứng dụng khác của cùng nhà phát triển</h2>
   <p class="family-sub">Những ứng dụng nhỏ, mỗi ứng dụng làm tốt một việc. Không tài khoản, không quảng cáo, và không ứng dụng nào theo dõi bạn.</p>
   <ul class="family-grid">
-    <li><a class="family-app" href="https://statuette.khangazun.com/vi/" style="--app: #3379f5"><img src="../family/icons/statuette.png" alt="" width="50" height="50" loading="lazy"><span class="family-text"><span class="family-name">Statuette</span><span class="family-tag">CPU, bộ nhớ, ổ đĩa và mạng ngay trên thanh menu.</span><span class="family-platforms"><span>Mac</span></span></span></a></li>
-    <li><a class="family-app" href="https://tockette.khangazun.com/vi/" style="--app: #d9504a"><img src="../family/icons/tockette.png" alt="" width="50" height="50" loading="lazy"><span class="family-text"><span class="family-name">Tockette</span><span class="family-tag">Hẹn giờ chỉ bằng một cú kéo từ thanh menu.</span><span class="family-platforms"><span>Mac</span></span></span></a></li>
-    <li><a class="family-app" href="https://zonette.khangazun.com/vi/" style="--app: #2f6fd6"><img src="../family/icons/zonette.png" alt="" width="50" height="50" loading="lazy"><span class="family-text"><span class="family-name">Zonette</span><span class="family-tag">Mọi múi giờ bạn quan tâm, chỉ một cú nhấp.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span><span>Android</span></span></span></a></li>
-    <li><a class="family-app" href="https://lunette.khangazun.com/vi/" style="--app: #5146d6"><img src="../family/icons/lunette.png" alt="" width="50" height="50" loading="lazy"><span class="family-text"><span class="family-name">Lunette</span><span class="family-tag">Mặt Trăng và Mặt Trời, chỉ trong một cái nhìn.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span><span>Android</span></span></span></a></li>
-    <li><a class="family-app" href="https://lunarette.khangazun.com/vi/" style="--app: #c8322f"><img src="../family/icons/lunarette.png" alt="" width="50" height="50" loading="lazy"><span class="family-text"><span class="family-name">Lunarette</span><span class="family-tag">Âm lịch, theo bốn truyền thống.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span><span>Android</span></span></span></a></li>
-    <li><a class="family-app" href="https://pausette.khangazun.com/vi/" style="--app: #1f8f84"><img src="../family/icons/pausette.png" alt="" width="50" height="50" loading="lazy"><span class="family-text"><span class="family-name">Pausette</span><span class="family-tag">Những quãng nghỉ nhẹ nhàng cho mắt và lưng.</span><span class="family-platforms"><span>Mac</span></span></span></a></li>
-    <li><a class="family-app" href="https://poisette.khangazun.com/vi/" style="--app: #2f8a7e"><img src="../family/icons/poisette.png" alt="" width="50" height="50" loading="lazy"><span class="family-text"><span class="family-name">Poisette</span><span class="family-tag">Ngồi thẳng lưng, có AirPods bạn đang đeo nhắc nhở.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span></span></span></a></li>
-    <li><a class="family-app" href="https://hushette.khangazun.com/vi/" style="--app: #5b54c9"><img src="../family/icons/hushette.png" alt="" width="50" height="50" loading="lazy"><span class="family-text"><span class="family-name">Hushette</span><span class="family-tag">Âm thanh nền êm dịu, không bao giờ lặp lại.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span><span>Android</span></span></span></a></li>
-    <li><a class="family-app" href="https://tapsody.khangazun.com/vi/" style="--app: #5b4fe0"><img src="../family/icons/tapsody.png" alt="" width="50" height="50" loading="lazy"><span class="family-text"><span class="family-name">Tapsody</span><span class="family-tag">Tiếng bàn phím cơ mỗi khi bạn gõ.</span><span class="family-platforms"><span>Mac</span></span></span></a></li>
-    <li><a class="family-app" href="https://thrumline.khangazun.com/vi/" style="--app: #c5215a"><img src="../family/icons/thrumline.png" alt="" width="50" height="50" loading="lazy"><span class="family-text"><span class="family-name">Thrumline</span><span class="family-tag">Nhịp tim của bạn, trực tiếp trên thanh menu.</span><span class="family-platforms"><span>Mac</span></span></span></a></li>
-    <li><a class="family-app" href="https://nightjar.khangazun.com/vi/" style="--app: #2f4fe0"><img src="../family/icons/nightjar.png" alt="" width="50" height="50" loading="lazy"><span class="family-text"><span class="family-name">Nightjar</span><span class="family-tag">Giữ cho Mac luôn thức. Thật lòng.</span><span class="family-platforms"><span>Mac</span></span></span></a></li>
-    <li><a class="family-app" href="https://umbrette.khangazun.com/vi/" style="--app: #5b4bc4"><img src="../family/icons/umbrette.png" alt="" width="50" height="50" loading="lazy"><span class="family-text"><span class="family-name">Umbrette</span><span class="family-tag">Làm tối mọi thứ trừ cửa sổ bạn đang làm việc.</span><span class="family-platforms"><span>Mac</span></span></span></a></li>
-    <li><a class="family-app" href="https://prompette.khangazun.com/vi/" style="--app: #b24d6e"><img src="../family/icons/prompette.png" alt="" width="50" height="50" loading="lazy"><span class="family-text"><span class="family-name">Prompette</span><span class="family-tag">Máy nhắc chữ ngay bên dưới camera.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span><span>Android</span></span></span></a></li>
-    <li><a class="family-app" href="https://tallette.khangazun.com/vi/" style="--app: #148c73"><img src="../family/icons/tallette.png" alt="" width="50" height="50" loading="lazy"><span class="family-text"><span class="family-name">Tallette</span><span class="family-tag">Một cuộn băng giấy cho các phép cộng của bạn.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span><span>Android</span></span></span></a></li>
-    <li><a class="family-app" href="https://probette.khangazun.com/vi/" style="--app: #b8306f"><img src="../family/icons/probette.png" alt="" width="50" height="50" loading="lazy"><span class="family-text"><span class="family-name">Probette</span><span class="family-tag">Mọi thông tin kỹ thuật của tệp media, bằng lời dễ hiểu.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span><span>Android</span></span></span></a></li>
-    <li><a class="family-app" href="https://bindette.khangazun.com/vi/" style="--app: #2b7a53"><img src="../family/icons/bindette.png" alt="" width="50" height="50" loading="lazy"><span class="family-text"><span class="family-name">Bindette</span><span class="family-tag">Biến các tệp âm thanh thành một cuốn sách nói hoàn chỉnh.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span><span>Android</span></span></span></a></li>
-    <li><a class="family-app" href="https://lettrette.khangazun.com/vi/" style="--app: #a85f34"><img src="../family/icons/lettrette.png" alt="" width="50" height="50" loading="lazy"><span class="family-text"><span class="family-name">Lettrette</span><span class="family-tag">Mở tệp winmail.dat và .msg đúng như lúc được gửi.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span></span></span></a></li>
-    <li><a class="family-app" href="https://nhanhtay.khangazun.com/vi/" style="--app: #4b2ee6"><img src="../family/icons/nhanhtay.png" alt="" width="50" height="50" loading="lazy" class="round"><span class="family-text"><span class="family-name">Nhanh Tay</span><span class="family-tag">Xếp bốn đáp án theo thứ tự. Thật nhanh.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span><span>Android</span></span></span></a></li>
-    <li><a class="family-app" href="https://pinette.khangazun.com/vi/" style="--app: #e0703a"><img src="../family/icons/pinette.png" alt="" width="50" height="50" loading="lazy"><span class="family-text"><span class="family-name">Pinette</span><span class="family-tag">Ghi chú luôn trong tầm mắt.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span><span>Android</span></span></span></a></li>
-    <li><a class="family-app" href="https://usagette.khangazun.com/vi/" style="--app: #f27833"><img src="../family/icons/usagette.png" alt="" width="50" height="50" loading="lazy"><span class="family-text"><span class="family-name">Usagette</span><span class="family-tag">Giới hạn sử dụng Claude ngay trên thanh menu.</span><span class="family-platforms"><span>Mac</span></span></span></a></li>
-    <li><a class="family-app" href="https://squiggo.khangazun.com/vi/" style="--app: #EE5A2F"><img src="../family/icons/squiggo.png" alt="" width="50" height="50" loading="lazy"><span class="family-text"><span class="family-name">Squiggo</span><span class="family-tag">Vẽ cùng một người bạn thân thiện.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span><span>Android</span></span></span></a></li>
-    <li><a class="family-app" href="https://foreman.khangazun.com/vi/" style="--app: #b34700"><img src="../family/icons/foreman.png" alt="" width="50" height="50" loading="lazy"><span class="family-text"><span class="family-name">Foreman</span><span class="family-tag">Công việc, báo giá và hóa đơn cho thợ.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span><span>Android</span></span></span></a></li>
-    <li><a class="family-app" href="https://tilewake.khangazun.com/vi/" style="--app: #EE5B3B"><img src="../family/icons/tilewake.png" alt="" width="50" height="50" loading="lazy"><span class="family-text"><span class="family-name">Tilewake</span><span class="family-tag">Trò xếp hình trượt có bức tranh thức dậy.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span><span>Android</span></span></span></a></li>
+    <li><a class="family-app" href="https://statuette.khangazun.com/vi/" style="--app: #3379f5"><img src="../family/icons/statuette.png" alt="" width="50" height="50" ><span class="family-text"><span class="family-name">Statuette</span><span class="family-tag">CPU, bộ nhớ, ổ đĩa và mạng ngay trên thanh menu.</span><span class="family-platforms"><span>Mac</span></span></span></a></li>
+    <li><a class="family-app" href="https://tockette.khangazun.com/vi/" style="--app: #d9504a"><img src="../family/icons/tockette.png" alt="" width="50" height="50" ><span class="family-text"><span class="family-name">Tockette</span><span class="family-tag">Hẹn giờ chỉ bằng một cú kéo từ thanh menu.</span><span class="family-platforms"><span>Mac</span></span></span></a></li>
+    <li><a class="family-app" href="https://zonette.khangazun.com/vi/" style="--app: #2f6fd6"><img src="../family/icons/zonette.png" alt="" width="50" height="50" ><span class="family-text"><span class="family-name">Zonette</span><span class="family-tag">Mọi múi giờ bạn quan tâm, chỉ một cú nhấp.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span><span>Android</span></span></span></a></li>
+    <li><a class="family-app" href="https://lunette.khangazun.com/vi/" style="--app: #5146d6"><img src="../family/icons/lunette.png" alt="" width="50" height="50" ><span class="family-text"><span class="family-name">Lunette</span><span class="family-tag">Mặt Trăng và Mặt Trời, chỉ trong một cái nhìn.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span><span>Android</span></span></span></a></li>
+    <li><a class="family-app" href="https://lunarette.khangazun.com/vi/" style="--app: #c8322f"><img src="../family/icons/lunarette.png" alt="" width="50" height="50" ><span class="family-text"><span class="family-name">Lunarette</span><span class="family-tag">Âm lịch, theo bốn truyền thống.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span><span>Android</span></span></span></a></li>
+    <li><a class="family-app" href="https://pausette.khangazun.com/vi/" style="--app: #1f8f84"><img src="../family/icons/pausette.png" alt="" width="50" height="50" ><span class="family-text"><span class="family-name">Pausette</span><span class="family-tag">Những quãng nghỉ nhẹ nhàng cho mắt và lưng.</span><span class="family-platforms"><span>Mac</span></span></span></a></li>
+    <li><a class="family-app" href="https://poisette.khangazun.com/vi/" style="--app: #2f8a7e"><img src="../family/icons/poisette.png" alt="" width="50" height="50" ><span class="family-text"><span class="family-name">Poisette</span><span class="family-tag">Ngồi thẳng lưng, có AirPods bạn đang đeo nhắc nhở.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span></span></span></a></li>
+    <li><a class="family-app" href="https://hushette.khangazun.com/vi/" style="--app: #5b54c9"><img src="../family/icons/hushette.png" alt="" width="50" height="50" ><span class="family-text"><span class="family-name">Hushette</span><span class="family-tag">Âm thanh nền êm dịu, không bao giờ lặp lại.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span><span>Android</span></span></span></a></li>
+    <li><a class="family-app" href="https://tapsody.khangazun.com/vi/" style="--app: #5b4fe0"><img src="../family/icons/tapsody.png" alt="" width="50" height="50" ><span class="family-text"><span class="family-name">Tapsody</span><span class="family-tag">Tiếng bàn phím cơ mỗi khi bạn gõ.</span><span class="family-platforms"><span>Mac</span></span></span></a></li>
+    <li><a class="family-app" href="https://thrumline.khangazun.com/vi/" style="--app: #c5215a"><img src="../family/icons/thrumline.png" alt="" width="50" height="50" ><span class="family-text"><span class="family-name">Thrumline</span><span class="family-tag">Nhịp tim của bạn, trực tiếp trên thanh menu.</span><span class="family-platforms"><span>Mac</span></span></span></a></li>
+    <li><a class="family-app" href="https://nightjar.khangazun.com/vi/" style="--app: #2f4fe0"><img src="../family/icons/nightjar.png" alt="" width="50" height="50" ><span class="family-text"><span class="family-name">Nightjar</span><span class="family-tag">Giữ cho Mac luôn thức. Thật lòng.</span><span class="family-platforms"><span>Mac</span></span></span></a></li>
+    <li><a class="family-app" href="https://umbrette.khangazun.com/vi/" style="--app: #5b4bc4"><img src="../family/icons/umbrette.png" alt="" width="50" height="50" ><span class="family-text"><span class="family-name">Umbrette</span><span class="family-tag">Làm tối mọi thứ trừ cửa sổ bạn đang làm việc.</span><span class="family-platforms"><span>Mac</span></span></span></a></li>
+    <li><a class="family-app" href="https://prompette.khangazun.com/vi/" style="--app: #b24d6e"><img src="../family/icons/prompette.png" alt="" width="50" height="50" ><span class="family-text"><span class="family-name">Prompette</span><span class="family-tag">Máy nhắc chữ ngay bên dưới camera.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span><span>Android</span></span></span></a></li>
+    <li><a class="family-app" href="https://tallette.khangazun.com/vi/" style="--app: #148c73"><img src="../family/icons/tallette.png" alt="" width="50" height="50" ><span class="family-text"><span class="family-name">Tallette</span><span class="family-tag">Một cuộn băng giấy cho các phép cộng của bạn.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span><span>Android</span></span></span></a></li>
+    <li><a class="family-app" href="https://probette.khangazun.com/vi/" style="--app: #b8306f"><img src="../family/icons/probette.png" alt="" width="50" height="50" ><span class="family-text"><span class="family-name">Probette</span><span class="family-tag">Mọi thông tin kỹ thuật của tệp media, bằng lời dễ hiểu.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span><span>Android</span></span></span></a></li>
+    <li><a class="family-app" href="https://bindette.khangazun.com/vi/" style="--app: #2b7a53"><img src="../family/icons/bindette.png" alt="" width="50" height="50" ><span class="family-text"><span class="family-name">Bindette</span><span class="family-tag">Biến các tệp âm thanh thành một cuốn sách nói hoàn chỉnh.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span><span>Android</span></span></span></a></li>
+    <li><a class="family-app" href="https://lettrette.khangazun.com/vi/" style="--app: #a85f34"><img src="../family/icons/lettrette.png" alt="" width="50" height="50" ><span class="family-text"><span class="family-name">Lettrette</span><span class="family-tag">Mở tệp winmail.dat và .msg đúng như lúc được gửi.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span></span></span></a></li>
+    <li><a class="family-app" href="https://nhanhtay.khangazun.com/vi/" style="--app: #4b2ee6"><img src="../family/icons/nhanhtay.png" alt="" width="50" height="50"  class="round"><span class="family-text"><span class="family-name">Nhanh Tay</span><span class="family-tag">Xếp bốn đáp án theo thứ tự. Thật nhanh.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span><span>Android</span></span></span></a></li>
+    <li><a class="family-app" href="https://pinette.khangazun.com/vi/" style="--app: #e0703a"><img src="../family/icons/pinette.png" alt="" width="50" height="50" ><span class="family-text"><span class="family-name">Pinette</span><span class="family-tag">Ghi chú luôn trong tầm mắt.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span><span>Android</span></span></span></a></li>
+    <li><a class="family-app" href="https://usagette.khangazun.com/vi/" style="--app: #f27833"><img src="../family/icons/usagette.png" alt="" width="50" height="50" ><span class="family-text"><span class="family-name">Usagette</span><span class="family-tag">Giới hạn sử dụng Claude ngay trên thanh menu.</span><span class="family-platforms"><span>Mac</span></span></span></a></li>
+    <li><a class="family-app" href="https://squiggo.khangazun.com/vi/" style="--app: #EE5A2F"><img src="../family/icons/squiggo.png" alt="" width="50" height="50" ><span class="family-text"><span class="family-name">Squiggo</span><span class="family-tag">Vẽ cùng một người bạn thân thiện.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span><span>Android</span></span></span></a></li>
+    <li><a class="family-app" href="https://foreman.khangazun.com/vi/" style="--app: #b34700"><img src="../family/icons/foreman.png" alt="" width="50" height="50" ><span class="family-text"><span class="family-name">Foreman</span><span class="family-tag">Công việc, báo giá và hóa đơn cho thợ.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span><span>Android</span></span></span></a></li>
+    <li><a class="family-app" href="https://tilewake.khangazun.com/vi/" style="--app: #EE5B3B"><img src="../family/icons/tilewake.png" alt="" width="50" height="50" ><span class="family-text"><span class="family-name">Tilewake</span><span class="family-tag">Trò xếp hình trượt có bức tranh thức dậy.</span><span class="family-platforms"><span>Mac</span><span>iPhone &amp; iPad</span><span>Android</span></span></span></a></li>
   </ul>
 </section>
 <!-- /family:apps -->
