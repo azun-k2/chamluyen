@@ -124,7 +124,7 @@ body.home { padding: 0 0 56px; background: var(--bg); }
 .final .btn.primary { background: #fff; color: #11753f; box-shadow: none; }
 .final .btn.ghost { background: rgba(255,255,255,.18); color: #fff; border-color: rgba(255,255,255,.45); }
 .final .family-stores { justify-content: center; }
-.home .family { max-width: 1060px; margin: 0 auto; padding: 0 22px; }
+.home .family { max-width: 1060px; margin: 88px auto 32px; padding: 0 22px; }
 .home footer { padding: 0 22px; }
 
 @media (max-width: 860px) {
