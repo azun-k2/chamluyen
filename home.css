@@ -149,3 +149,6 @@ body.home { padding: 0 0 56px; background: var(--bg); }
   .grades { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .float { font-size: 13px; padding: 8px 12px; }
 }
+
+.strip b.book { font-size: clamp(20px, 2.6vw, 28px); line-height: 1.15; padding-top: 6px; }
+.strip .wrap { align-items: start; }
