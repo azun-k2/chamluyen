@@ -152,3 +152,28 @@ body.home { padding: 0 0 56px; background: var(--bg); }
 
 .strip b.book { font-size: clamp(20px, 2.6vw, 28px); line-height: 1.15; padding-top: 6px; }
 .strip .wrap { align-items: start; }
+
+/* videos */
+.videos { display: grid; grid-template-columns: .8fr .8fr 1.5fr; gap: 20px; align-items: end; margin-top: 30px; }
+.vcard { display: block; position: relative; border-radius: 26px; overflow: hidden; box-shadow: var(--shadow); text-decoration: none; background: #14261c; }
+.vcard img { display: block; width: 100%; height: auto; transition: transform .3s; }
+.vcard:hover img { transform: scale(1.03); }
+.vcard .play { position: absolute; left: 50%; top: 46%; width: 84px; height: 84px; margin: -42px 0 0 -42px; border-radius: 50%;
+  background: rgba(255,255,255,.94); box-shadow: 0 8px 24px rgba(0,0,0,.3); }
+.vcard .play::after { content: ""; position: absolute; left: 33px; top: 24px; border-left: 28px solid var(--g1); border-top: 18px solid transparent; border-bottom: 18px solid transparent; }
+.vcard .cap { position: absolute; left: 0; right: 0; bottom: 0; padding: 40px 18px 16px; color: #fff; font-weight: 800; font-size: 19px; line-height: 1.2;
+  background: linear-gradient(to top, rgba(10,30,20,.78), transparent); }
+.vcard .cap small { display: block; font-weight: 600; font-size: 14px; opacity: .85; margin-top: 3px; }
+.vcard:focus-visible { outline: 4px solid var(--g2); outline-offset: 3px; }
+.vbox { position: fixed; inset: 0; z-index: 50; background: rgba(8, 20, 14, .86); display: grid; place-items: center; padding: 20px; }
+.vbox[hidden] { display: none; }
+.vbox video { max-width: 94vw; max-height: 88vh; border-radius: 18px; background: #000; }
+.vbox video.tall { height: min(88vh, 1280px); width: auto; aspect-ratio: 9 / 16; }
+.vclose { position: absolute; top: 14px; right: 14px; width: 52px; height: 52px; border-radius: 50%; border: 0; background: #fff; color: var(--ink, #14261c);
+  font-size: 34px; line-height: 1; cursor: pointer; }
+body.vopen { overflow: hidden; }
+@media (max-width: 860px) {
+  .videos { display: flex; overflow-x: auto; gap: 14px; scroll-snap-type: x mandatory; padding-bottom: 12px; margin-right: -22px; padding-right: 22px; }
+  .vcard { flex: none; scroll-snap-align: start; width: 62vw; max-width: 300px; }
+  .vcard.wide { width: 86vw; max-width: 520px; }
+}
