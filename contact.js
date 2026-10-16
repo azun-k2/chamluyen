@@ -8,7 +8,7 @@
     ? { sending: "Đang gửi…", ok: "Đã gửi. Chúng tôi sẽ liên hệ với bạn qua số điện thoại này.", phone: "Số điện thoại chưa đúng (di động Việt Nam, 10 số).", many: "Bạn vừa gửi tin nhắn. Vui lòng đợi 10 phút rồi gửi lại, hoặc dùng email hay Zalo.", bad: "Vui lòng điền đủ thông tin.", net: "Chưa gửi được. Kiểm tra mạng rồi thử lại, hoặc dùng email hay Zalo." }
     : { sending: "Sending…", ok: "Sent. We will reach out on this phone number.", phone: "That phone number does not look right (a Vietnamese mobile number, 10 digits).", many: "You just sent a message. Please wait 10 minutes before sending another, or use email or Zalo.", bad: "Please fill in every field.", net: "Could not send. Check the connection and try again, or use email or Zalo." };
   var status = form.querySelector(".status"), button = form.querySelector("button");
-  var kind = form.querySelectorAll("input[name=kind]"), groups = { support: form.querySelector("[data-for=support]") };
+  var kind = form.querySelectorAll("input[name=kind]"), groups = { buy: form.querySelector("[data-for=buy]"), support: form.querySelector("[data-for=support]") };
   function sync() {
     var k = form.querySelector("input[name=kind]:checked").value;
     Object.keys(groups).forEach(function (g) {
