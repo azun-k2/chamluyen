@@ -89,19 +89,19 @@ footer a { color: var(--muted); }
 .get-item h3 { margin: 0; font-size: 1.02rem; line-height: 1.35; }
 
 /* The "Tải ứng dụng" / "Get the app" pill: the one filled button in the nav, so the way to install stands out */
-nav.links a[href="download.html"] {
+nav.links > a[href="download.html"] {
   background: var(--accent);
   border-color: var(--accent);
   color: #fff;
   font-weight: 700;
   box-shadow: 0 6px 16px color-mix(in srgb, var(--accent) 38%, transparent);
 }
-nav.links a[href="download.html"]:hover, nav.links a[href="download.html"]:focus-visible {
+nav.links > a[href="download.html"]:hover, nav.links > a[href="download.html"]:focus-visible {
   background: color-mix(in srgb, var(--accent) 88%, #000);
   border-color: color-mix(in srgb, var(--accent) 88%, #000);
   color: #fff;
 }
 @media (prefers-color-scheme: dark) {
-  nav.links a[href="download.html"] { color: #06210f; }
-  nav.links a[href="download.html"]:hover, nav.links a[href="download.html"]:focus-visible { color: #06210f; background: color-mix(in srgb, var(--accent) 88%, #fff); border-color: color-mix(in srgb, var(--accent) 88%, #fff); }
+  nav.links > a[href="download.html"] { color: #06210f; }
+  nav.links > a[href="download.html"]:hover, nav.links > a[href="download.html"]:focus-visible { color: #06210f; background: color-mix(in srgb, var(--accent) 88%, #fff); border-color: color-mix(in srgb, var(--accent) 88%, #fff); }
 }
