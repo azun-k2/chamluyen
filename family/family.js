@@ -28,6 +28,11 @@
     return code === "en" ? `../${name}` : `../${code}/${name}`;
   };
 
+  // A site with a default language (data-default) opens it on a first visit, whatever the browser says.
+  const fixed = me.dataset.default;
+  if (fixed && fixed !== "en" && here === "en" && !read() && langs.includes(fixed) && !/[?&]lang=en\b/.test(location.search)) {
+    location.replace(target(fixed) + location.hash); return;
+  }
   // First visit: follow the browser's languages, in order, if the site has one.
   if (here === "en" && !read() && langs.length > 1 && !/[?&]lang=en\b/.test(location.search)) {
     for (const tag of navigator.languages || [navigator.language]) {
